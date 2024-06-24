@@ -39,7 +39,7 @@ fun BeerItem(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(IntrinsicSize.Max)   // Will occupy the as much size it needs
+                .height(IntrinsicSize.Max)   // Assigns the height of the tallest child composable
                 .padding(16.dp)
         ) {
 
