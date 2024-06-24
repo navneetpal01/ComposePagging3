@@ -1,6 +1,7 @@
 package com.example.composepagging3.data.mappers
 
 import com.example.composepagging3.data.local.BeerEntity
+import com.example.composepagging3.domain.Beer
 import com.example.composepagging3.domain.BeerDto
 
 
@@ -15,4 +16,13 @@ fun BeerDto.toBeerEntity() : BeerEntity{
     )
 }
 
-fun
+fun BeerEntity.toBeer() : Beer{
+    return Beer(
+        id = id,
+        name = name,
+        tagline = tagline,
+        description = description,
+        firstBrewed = firstBrewed,
+        imageUrl = imageUrl
+    )
+}
